@@ -1,4 +1,4 @@
-web_pdf_downloader
+Web PDF Files Downloader
 ==================
 
 Download all PDF files in single webpage  
