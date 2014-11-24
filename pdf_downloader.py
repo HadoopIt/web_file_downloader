@@ -6,6 +6,7 @@ Created on Sat Nov 22 14:57:12 2014
 """
 
 import lxml.html, urllib2, urlparse, os
+import sys
 
 def main(base_url, save_dir):    
     # fetch the page
@@ -30,8 +31,11 @@ def main(base_url, save_dir):
     print 'All DONE!'
 
 if __name__ == '__main__':
-    url = 'http://cs229.stanford.edu/materials.html'
-    save_dir = 'cs229'
+    if len(sys.argv) != 3:
+        print 'Usage: python pdf_downloader.py <webpage-url> <save-dir>'
+        sys.exit()
+    url = sys.argv[1]
+    save_dir = sys.argv[2]
     if os.path.exists(save_dir) is False:
         os.mkdir(save_dir)
     main(url, save_dir)
