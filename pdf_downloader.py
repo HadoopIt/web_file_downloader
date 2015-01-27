@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Nov 22 14:57:12 2014
-
 @author: Bing Liu
 """
 
