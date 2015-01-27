@@ -1,7 +1,7 @@
-Web PDF Files Downloader
+Web Files Downloader
 ==================
 
-Download all PDF files in single webpage  
+Download all files with user specified type in single webpage  
 
-Usage: python pdf_downloader.py \<web-page-url> \<save-dir>  
-Parameters: Web page URL, PDF Download directory
+Usage: python web_file_downloader.py \<webpage-url> \<file_type> \<save-dir>
+Parameters: Web page URL, File Type, File download directory
